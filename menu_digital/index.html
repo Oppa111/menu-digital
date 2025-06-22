@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú Digital - OPPA FOOD</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="openFullscreen();">
+
+  <header>
+    <h1>Menú OPPA FOOD</h1>
+    <nav>
+      <button onclick="showCategory('pupusas')">Pupusas</button>
+      <button onclick="showCategory('tacos')">Tacos</button>
+      <button onclick="showCategory('tortas')">Tortas</button>
+      <button onclick="showCategory('bebidas')">Bebidas</button>
+    </nav>
+  </header>
+
+  <main id="menu">
+    <section id="pupusas" class="category">
+      <h2>Pupusas</h2>
+      <div class="item"><img src="img/pupusas.jpg"><h3>Frijol con queso</h3><p>$0.75</p></div>
+      <div class="item"><img src="img/pupusas.jpg"><h3>Chicharrón con queso</h3><p>$1.25</p></div>
+    </section>
+    <section id="tacos" class="category hidden">
+      <h2>Tacos</h2>
+      <div class="item"><img src="img/tacos.jpg"><h3>Tacos de birria (3)</h3><p>$5.50</p></div>
+      <div class="item"><img src="img/tacos.jpg"><h3>Tacos quesabirria (3)</h3><p>$6.90</p></div>
+    </section>
+    <section id="tortas" class="category hidden">
+      <h2>Tortas</h2>
+      <div class="item"><img src="img/torta.jpg"><h3>Torta de jamón</h3><p>$1.50</p></div>
+      <div class="item"><img src="img/torta.jpg"><h3>Torta mixta</h3><p>$3.50</p></div>
+    </section>
+    <section id="bebidas" class="category hidden">
+      <h2>Bebidas</h2>
+      <div class="item"><img src="img/licuado.jpg"><h3>Leche con guineo</h3><p>$2.00</p></div>
+      <div class="item"><img src="img/licuado.jpg"><h3>Café con leche</h3><p>$1.00</p></div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
